@@ -10,7 +10,7 @@
     "build": "parcel build ./index.ts"
   },
   "devDependencies": {
-    "@logseq/libs": "^0.0.1-alpha.10",
+    "@logseq/libs": "^0.0.1-alpha.11",
     "parcel": "^2.0.0-beta.2"
   },
   "logseq": {
