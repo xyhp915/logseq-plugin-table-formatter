@@ -1,0 +1,20 @@
+{
+  "name": "logseq-plugin-table-formatter",
+  "version": "0.0.1",
+  "description": "A logseq plugin that to format markdown table text",
+  "main": "dist/index.js",
+  "author": "Charlie",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve ./index.ts",
+    "build": "parcel build ./index.ts"
+  },
+  "devDependencies": {
+    "@logseq/libs": "^0.0.1-alpha.10",
+    "parcel": "^2.0.0-beta.2"
+  },
+  "logseq": {
+    "id": "_2tljpa8zj"
+  },
+  "dependencies": {}
+}
