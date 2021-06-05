@@ -27,6 +27,19 @@ test('api', () => {
 | 你  |     |
 `
 
+const inst2 = new MarkdownTableSpliter(`
+|a|b
+|-
+|c|d|e
+`)
+  const inst22 = `
+| a   | b   |     |
+| --- | --- | --- |
+| c   | d   | e   |
+`
+
+
   expect(inst0.format().join('\n')).toBe(trimRN(inst00))
   expect(inst1.format().join('\n')).toBe(trimRN(inst11))
+  expect(inst2.format().join('\n')).toBe(trimRN(inst22))
 })

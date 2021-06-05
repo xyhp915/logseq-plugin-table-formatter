@@ -72,6 +72,7 @@ class MarkdownTableSpliter {
     }
 
     const headRow = rows[0]
+    const tailRow = rows[rows.length - 1]
     const SPACE = ' '
     const format = () => {
       if (!valid) return str
@@ -79,7 +80,7 @@ class MarkdownTableSpliter {
       let retRows = rows.map(row => [...row])
 
       // 1. repeat cols and fill SPACE in field by Max width field
-      headRow.forEach((_, col) => {
+      Array.from({length:Math.max(headRow.length, tailRow.length)}).forEach((_, col) => {
         const maxWidth = Math.max(3, ...retRows.map(row => {
           const f = row[col] = (row[col] || '').trim()
           return !f ? (0) : stringWidth(f)
