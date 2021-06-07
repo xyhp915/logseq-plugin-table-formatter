@@ -7,13 +7,14 @@ import { MarkdownTableSpliter } from './formatter'
 function main () {
   logseq.Editor.registerSlashCommand('🪄 format table',
     async () => {
-      const [content, uuid] = await logseq.Editor.getCurrentBlockContent()
-      if (!content) return
+      const b = await logseq.Editor.getCurrentBlock()
+      if (!b?.content) return
 
+      const content = await logseq.Editor.getEditingBlockContent()
       const output = new MarkdownTableSpliter(content).format()
 
       await logseq.Editor.updateBlock(
-        uuid,
+        b.uuid,
         output.join('\n')
       )
 

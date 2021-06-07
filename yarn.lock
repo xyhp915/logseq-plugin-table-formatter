@@ -1209,10 +1209,10 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@logseq/libs@^0.0.1-alpha.14":
-  version "0.0.1-alpha.14"
-  resolved "https://registry.yarnpkg.com/@logseq/libs/-/libs-0.0.1-alpha.14.tgz#7d29db60300b37c1b32e5eb0504d9167c2b754e1"
-  integrity sha512-+m9a7AgRHC640OensovdEhf1PuhhidkCkvMYDqA/YbF+qd/Ar+NTD/GReIsRpIS5saWQfwoS7w0/HIzZUPzMEg==
+"@logseq/libs@^0.0.1-alpha.15":
+  version "0.0.1-alpha.15"
+  resolved "https://registry.yarnpkg.com/@logseq/libs/-/libs-0.0.1-alpha.15.tgz#1255abfe95c219718f67034cf3cc0dcd21220a69"
+  integrity sha512-LlfNrqKtnhpoP0dmNzibCIxmOLrUmyJkFrh+67rWUGc9F5MbkFlIWjDMWy83iNGM4uWuAhGxRgzhMktOio5nBw==
   dependencies:
     csstype "^3.0.8"
     debug "^4.3.1"
