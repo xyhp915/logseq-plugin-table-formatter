@@ -1,6 +1,6 @@
 {
   "name": "logseq-plugin-table-formatter",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A logseq plugin that to format markdown table text",
   "main": "dist/index.js",
   "author": "Charlie",
